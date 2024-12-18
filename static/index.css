@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.5;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 2px solid #444;
+}
+
+th {
+    background-color: #333;
+    text-transform: uppercase;
+    color: #ddd;
+}
+
+form input, form button {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    width: 100%;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+form input {
+    padding: 12px 15px;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+}
+
+form button, a button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto;
+    margin-right: 10px;
+}
+
+form button:hover, a button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+form button:active, a button:active {
+    transform: translateY(2px);
+}
+
+@media (max-width: 1024px) {
+    table {
+        font-size: 14px;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    form input, form button {
+        font-size: 14px;
+        padding: 12px 10px;
+        margin: 10px 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form button, a button {
+        width: 100%;
+    }
+
+    body {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 10px;
+    }
+
+    form input, form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    form {
+        padding-right: 30px;
+    }
+
+    th, td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    form button, a button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    body {
+        padding: 5px;
+    }
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
